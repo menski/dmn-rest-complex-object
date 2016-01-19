@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn11.xsd" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="testDecision" name="Decision">
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="input1" label="Type">
+        <inputExpression id="inputExpression1" typeRef="string">        <text>claim.type</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Result" name="result" typeRef="string" />
+      <rule id="row-204465996-1">
+        <inputEntry id="UnaryTests_11pll83">        <text><![CDATA["Unfall"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1q9nsia">        <text><![CDATA["Unfall"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-204465996-2">
+        <inputEntry id="UnaryTests_0fy8oyh">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1mvmrx9">        <text><![CDATA["Kein Unfall"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
